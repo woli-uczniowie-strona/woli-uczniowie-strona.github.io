@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="UTF-8">
+<title>Samorząd - WOLI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+function changeTheme() {
+    let theme = document.getElementById("theme-style");
+
+    if(theme.getAttribute("href") === "style.css"){
+        theme.setAttribute("href", "style2.css");
+    } else {
+        theme.setAttribute("href", "style.css");
+    }
+}
+</script>
+
+<link id="theme-style" rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>Samorząd uczniowski</h1>
+<p>Wojskowe Ogólnokształcące Liceum Informatyczne</p>
+</header>
+
+<nav>
+<a href="index.html">Strona główna</a>
+<a href="aktualnosci.html">Aktualności</a>
+<a href="projekty.html">Projekty uczniów</a>
+<a href="samorzad.html">Samorząd</a>
+<a href="kontakt.html">Kontakt</a>
+<button onclick="changeTheme()">Zmień Motyw</button>
+</nav>
+
+<section class="section">
+
+<h2>Skład samorządu</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Członek 1</h3>
+<p>Funkcja...</p>
+</div>
+
+<div class="card">
+<h3>Członek 2</h3>
+<p>Funkcja...</p>
+</div>
+
+<div class="card">
+<h3>Członek 3</h3>
+<p>Funkcja...</p>
+</div>
+
+<div class="card">
+<h3>Członek 4</h3>
+<p>Funkcja...</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Uczniowie WOLI
+</footer>
+
+</body>
+</html>

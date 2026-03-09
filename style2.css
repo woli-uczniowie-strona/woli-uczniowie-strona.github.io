@@ -1,0 +1,152 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family: "Courier New", monospace;
+    background:#05070d;
+    color:#c7ffb2;
+}
+
+/* Header */
+header{
+    background:#020305;
+    padding:25px;
+    text-align:center;
+    border-bottom:2px solid #00ff88;
+    box-shadow:0 0 10px #00ff88;
+}
+
+header h1{
+    font-size:34px;
+    letter-spacing:2px;
+    color:#00ff88;
+    text-shadow:0 0 10px #00ff88;
+}
+
+header p{
+    color:#7cffc1;
+    font-size:14px;
+}
+
+/* Navigation */
+nav{
+    background:#020305;
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #003322;
+}
+
+nav a{
+    color:#00ff88;
+    margin:0 18px;
+    text-decoration:none;
+    font-weight:bold;
+    letter-spacing:1px;
+    transition:0.25s;
+}
+
+nav a:hover{
+    color:#b6ffdb;
+    text-shadow:0 0 8px #00ff88;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:44px;
+    margin-bottom:15px;
+    color:#00ff88;
+    text-shadow:0 0 12px #00ff88;
+}
+
+.hero p{
+    color:#8effc8;
+    font-size:18px;
+}
+
+/* Section */
+.section{
+    padding:50px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section h2{
+    margin-bottom:30px;
+    color:#00ff88;
+    text-shadow:0 0 8px #00ff88;
+}
+
+/* Cards */
+.cards{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#020305;
+    border:1px solid #003322;
+    padding:25px;
+    border-radius:8px;
+    flex:1;
+    min-width:260px;
+    transition:0.3s;
+    position:relative;
+}
+
+.card:hover{
+    border-color:#00ff88;
+    box-shadow:0 0 15px #00ff88;
+    transform:translateY(-6px);
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:#7cffc1;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#020305;
+    border-top:2px solid #00ff88;
+    margin-top:60px;
+    color:#7cffc1;
+    font-size:14px;
+}
+
+/* Theme button */
+
+nav button{
+    background: transparent;
+    color:#00ff88;
+    border:1px solid #00ff88;
+    padding:6px 14px;
+    margin-left:20px;
+    font-family: "Courier New", monospace;
+    font-size:14px;
+    cursor:pointer;
+    border-radius:4px;
+    transition:0.25s;
+}
+
+nav button:hover{
+    background:#00ff88;
+    color:#020305;
+    box-shadow:0 0 10px #00ff88;
+}
+
+nav button:active{
+    transform:scale(0.95);
+}
