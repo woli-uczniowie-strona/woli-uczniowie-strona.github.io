@@ -7,6 +7,9 @@
 
 /* Body */
 body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
     font-family: "Courier New", monospace;
     background:#05070d;
     color:#c7ffb2;
@@ -121,7 +124,7 @@ footer{
     padding:25px;
     background:#020305;
     border-top:2px solid #00ff88;
-    margin-top:60px;
+    margin-top:auto;
     color:#7cffc1;
     font-size:14px;
 }
