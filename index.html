@@ -1,4 +1,136 @@
-<!DOCTYPE hml>
-<html>
-	<h1>Hello Kadeci!</h1>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Uczniowie WOLI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:#0f172a;
+            color:white;
+        }
+
+        header{
+            background:#020617;
+            padding:20px;
+            text-align:center;
+            border-bottom:2px solid #1e293b;
+        }
+
+        nav{
+            background:#020617;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:#38bdf8;
+            margin:0 15px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:white;
+        }
+
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        .hero h1{
+            font-size:42px;
+        }
+
+        .hero p{
+            color:#94a3b8;
+            font-size:18px;
+        }
+
+        .section{
+            padding:40px;
+            max-width:1000px;
+            margin:auto;
+        }
+
+        .cards{
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:#020617;
+            border:1px solid #1e293b;
+            padding:20px;
+            border-radius:10px;
+            flex:1;
+            min-width:250px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#020617;
+            border-top:2px solid #1e293b;
+            margin-top:40px;
+            color:#94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Strona Uczniów WOLI</h1>
+    <p>Wojskowe Ogólnokształcące Liceum Informatyczne</p>
+</header>
+
+<nav>
+    <a href="#">Strona główna</a>
+    <a href="#">Aktualności</a>
+    <a href="#">Projekty uczniów</a>
+    <a href="#">Samorząd</a>
+    <a href="#">Kontakt</a>
+</nav>
+
+<section class="hero">
+    <h1>Witaj na stronie uczniów</h1>
+    <p>Miejsce projektów, informacji i życia szkolnego.</p>
+</section>
+
+<section class="section">
+
+    <h2>Co znajdziesz na stronie?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Projekty uczniów</h3>
+            <p>Programowanie, robotyka, systemy operacyjne i inne projekty tworzone przez uczniów.</p>
+        </div>
+
+        <div class="card">
+            <h3>Aktualności</h3>
+            <p>Informacje o wydarzeniach szkolnych, konkursach i inicjatywach uczniowskich.</p>
+        </div>
+
+        <div class="card">
+            <h3>Społeczność</h3>
+            <p>Miejsce do współpracy, dzielenia się pomysłami i integracji uczniów.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Uczniowie WOLI
+</footer>
+
+</body>
 </html>
