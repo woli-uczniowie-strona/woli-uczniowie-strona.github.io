@@ -7,15 +7,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <script>
-function changeTheme() {
-    let theme = document.getElementById("theme-style");
+const themeKey = 'woliTheme';
 
-    if(theme.getAttribute("href") === "style.css"){
-        theme.setAttribute("href", "style2.css");
-    } else {
-        theme.setAttribute("href", "style.css");
-    }
+function applyTheme(themeValue) {
+    const themeLink = document.getElementById("theme-style");
+    if (!themeLink) return;
+    themeLink.setAttribute("href", themeValue === "alt" ? "style2.css" : "style.css");
 }
+
+function changeTheme() {
+    const current = localStorage.getItem(themeKey) === "alt" ? "alt" : "default";
+    const next = current === "alt" ? "default" : "alt";
+    localStorage.setItem(themeKey, next);
+    applyTheme(next);
+}
+
+function initTheme() {
+    const stored = localStorage.getItem(themeKey);
+    applyTheme(stored === "alt" ? "alt" : "default");
+}
+
+document.addEventListener("DOMContentLoaded", initTheme);
 </script>
 
 <link id="theme-style" rel="stylesheet" href="style.css">
